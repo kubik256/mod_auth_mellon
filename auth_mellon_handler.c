@@ -3288,6 +3288,7 @@ static int am_send_paos_authn_request(request_rec *r)
     const char *relay_state = NULL;
     char *assertion_consumer_service_url;
     int is_passive = FALSE;
+    int is_forced = FALSE;
 
     dir_cfg = am_get_dir_cfg(r);
 
