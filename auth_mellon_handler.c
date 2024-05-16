@@ -3105,7 +3105,7 @@ static int am_init_authn_request_common(request_rec *r,
          * So leave that empty for now, it is not strictly required */
     }
 
-    request->ForceAuthn = FALSE;
+    request->ForceAuthn = is_forced;
     request->IsPassive = is_passive;
     request->NameIDPolicy->AllowCreate = TRUE;
 
